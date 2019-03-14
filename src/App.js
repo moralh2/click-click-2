@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Wrapper from "./components/Wrapper";
+import Card from "./components/Card";
+
 
 class App extends Component {
 
@@ -7,33 +9,11 @@ class App extends Component {
     return (
       <Wrapper>
 
-        <div className="card col-sm-4">
-          <img src={imageSrc} className="card-img-top" alt="..."></img>
-          <div className="card-body">
-            <p className="card-text">Dexterino</p>
-          </div>
-        </div>
-
-        <div className="card col-sm-4">
-          <img src={imageSrc} className="card-img-top" alt="..."></img>
-          <div className="card-body">
-            <p className="card-text">Dexterino</p>
-          </div>
-        </div>
-
-        <div className="card col-sm-4">
-          <img src={imageSrc} className="card-img-top" alt="..."></img>
-          <div className="card-body">
-            <p className="card-text">Dexterino</p>
-          </div>
-        </div>
-
-        <div className="card col-sm-4">
-          <img src={imageSrc} className="card-img-top" alt="..."></img>
-          <div className="card-body">
-            <p className="card-text">Dexterino</p>
-          </div>
-        </div>
+      <Card imageSrc={imageSrc}/>
+      <Card imageSrc={imageSrc}/>
+      <Card imageSrc={imageSrc}/>
+      <Card imageSrc={imageSrc}/>
+      <Card imageSrc={imageSrc}/>
 
       </Wrapper>
     );
