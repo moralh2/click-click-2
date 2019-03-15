@@ -32,15 +32,14 @@ class App extends Component {
   }
 
   compare = (a, b) => {
-    if (a.id < b.id) {return -1}
-    if (a.id > b.id) {return 1}
+    if (a.id < b.id) { return -1 }
+    if (a.id > b.id) { return 1  }
     return 0
   }
 
   handleClicky = id => {
     let allImages = this.state.clickables.sort(this.compare)
     let clickedImage = allImages.filter(clicky => clicky.id === id)
-
     // --------- if the image hasn't been clicked
     if (clickedImage[0].clicked === false) {
       // set clicked to true

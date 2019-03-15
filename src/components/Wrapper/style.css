@@ -1,5 +1,4 @@
 .wrapper {
-    background: rgb(238, 227, 112);
     padding: 50px;
     height: 100%;
     display: flex;
@@ -7,5 +6,6 @@
     justify-content: space-around;
     align-content: flex-start;
     overflow: auto;
+    max-width: 1000px;
   }
   
