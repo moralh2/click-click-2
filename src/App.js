@@ -12,8 +12,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    let copy = JSON.parse(JSON.stringify(imagesImport))
-    this.setState({clickables: copy})
+    this.setState({
+      clickables: JSON.parse(JSON.stringify(imagesImport))
+    })
   }
 
   shuffleArr = array => {
@@ -21,7 +22,6 @@ class App extends Component {
     while (0 !== currentIndex) {
       randomIndex = Math.floor(Math.random() * currentIndex)
       currentIndex -= 1
-
       temporaryValue = array[currentIndex]
       array[currentIndex] = array[randomIndex]
       array[randomIndex] = temporaryValue
@@ -30,63 +30,39 @@ class App extends Component {
   }
 
   compare = (a, b) => {
-    if (a.id < b.id)
-      return -1
-    if (a.id > b.id)
-      return 1
+    if (a.id < b.id) {return -1}
+    if (a.id > b.id) {return 1}
     return 0
   }
 
   handleClicky = id => {
     let allImages = this.state.clickables.sort(this.compare)
     let clickedImage = allImages.filter(clicky => clicky.id === id)
-    // console.log(clickedImage);
 
-    // --------- IMAGE NOT CLICKED YET
+    // --------- if the image hasn't been clicked
     if (clickedImage[0].clicked === false) {
       // set clicked to true
-      // console.log('made it here')
       allImages[parseInt(id) - 1].clicked = true
-
-      console.log(imagesImport)
-
       // increase score
       let newScore = this.state.score + 1
-
       // compare to top score
       let newTopScore = this.state.topScore
       if (this.state.topScore < newScore) { newTopScore++ }
-
+      // shuffle the array
       let finalImages = this.shuffleArr(allImages)
-
-      // console.log(clickablesImport)
-
+      // update game state
       this.setState({
         score: newScore,
         topScore: newTopScore,
         clickables: finalImages
       })
     }
+    // --------- if the image HAS been clicked on
     else {
-
-      let newScore = 0
-      let newTopScore = this.state.topScore
-      // let finalImages = clickablesImport.slice()
-      // finalImages = this.shuffleArr(finalImages);
-      
-      
-
-      // console.log('down here')
-      // console.log(clickablesImport)
-      // let copy = clickablesImport;
-      // let copy = clickablesImport.slice();
-      let copy = JSON.parse(JSON.stringify(imagesImport))
-
-
+      // reset score to 0, and reset array
       this.setState({
-        score: newScore,
-        topScore: newTopScore,
-        clickables: copy
+        score: 0,
+        clickables:  this.shuffleArr(JSON.parse(JSON.stringify(imagesImport)))  
       })
     }
   }
