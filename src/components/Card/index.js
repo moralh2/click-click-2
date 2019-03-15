@@ -20,7 +20,7 @@ function Card(props) {
                     </li>
                 </ul>
             </div>
-            
+            <span onClick={() => props.handleClicky(props.id)} className="add">Q</span>
         </div>
 
     )
