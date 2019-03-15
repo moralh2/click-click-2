@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import Wrapper from "./components/Wrapper"
 import Card from "./components/Card"
-import imagesImport from "./images.json"
 import Score from "./components/Score"
-
+import imagesImport from "./images.json"
 
 class App extends Component {
 
@@ -63,7 +62,7 @@ class App extends Component {
       // reset score to 0, and reset array
       this.setState({
         score: 0,
-        clickables:  this.shuffleArr(JSON.parse(JSON.stringify(imagesImport)))  
+        clickables: this.shuffleArr(JSON.parse(JSON.stringify(imagesImport)))  
       })
     }
   }

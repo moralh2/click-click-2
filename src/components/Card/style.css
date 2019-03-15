@@ -13,4 +13,19 @@
   .card > .img-container > img {
     width: 60%;
   }
-  
+
+ .Leela.Centaur {
+    padding-top: 2rem;
+  }
+
+  .Roberto,
+  .Bender.Angry,
+  .Female.Fry {
+    padding-top: 1rem;
+  }
+
+  .Nibbler,
+  .Zoidberg,
+  .Bender.Parties  {
+    padding-top: 0.5rem;
+  }

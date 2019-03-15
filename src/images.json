@@ -13,26 +13,26 @@
   },
   {
     "id": 3,
-    "name": "Hermes",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/aa/Hermes_Conrad_promo_pic.png/190px-Hermes_Conrad_promo_pic.png",
+    "name": "Bender Left",
+    "image": "https://purepng.com/public/uploads/large/purepng.com-futurama-benderfuturamaanimated-sciencefictionsitcomcartoonfuturama-benderbender-1701528547515nfo2s.png",
     "clicked": false
   },
   {
     "id": 4,
-    "name": "Leela",
-    "image": "https://upload.wikimedia.org/wikipedia/en/d/d4/Turanga_Leela.png",
+    "name": "Bender Bite",
+    "image": "https://purepng.com/public/uploads/large/purepng.com-futurama-benderfuturamaanimated-sciencefictionsitcomcartoonfuturama-benderbender-1701528547484pmatc.png",
     "clicked": false
   },
   {
     "id": 5,
-    "name": "Kif",
-    "image": "https://vignette.wikia.nocookie.net/en.futurama/images/8/82/Lieutenant_Kif_Kroker.png/revision/latest?cb=20101013084718",
+    "name": "Roberto",
+    "image": "https://purepng.com/public/uploads/large/purepng.com-futurama-robertofuturamaanimationsciencefictioncartoon-1701528604152iqfb1.png",
     "clicked": false
   },
   {
     "id": 6,
-    "name": "Farnsworth",
-    "image": "https://cdn.staticneo.com/w/futurama/thumb/4/4e/Farnsworth.png/200px-Farnsworth.png",
+    "name": "Bender Right",
+    "image": "https://purepng.com/public/uploads/large/purepng.com-futurama-benderfuturamaanimated-sciencefictionsitcomcartoonfuturama-benderbender-17015285474961jjfk.png",
     "clicked": false
   },
   {
@@ -43,8 +43,8 @@
   },
   {
     "id": 8,
-    "name": "Amy",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/FuturamaAmyWong.png/140px-FuturamaAmyWong.png",
+    "name": "Leela Centaur",
+    "image": "https://purepng.com/public/uploads/large/purepng.com-futurama-leelafuturamaanimated-sciencefictionsitcomcartoonfuturama-leelaleela-1701528547429w1mzq.png",
     "clicked": false
   },
   {
