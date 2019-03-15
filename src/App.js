@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Wrapper from "./components/Wrapper";
 import Card from "./components/Card";
+import imagesImport from "./images.json";
 
+let imageColl = JSON.parse(JSON.stringify(imagesImport))
 
 class App extends Component {
 
@@ -9,11 +11,15 @@ class App extends Component {
     return (
       <Wrapper>
 
-      <Card imageSrc={imageSrc}/>
-      <Card imageSrc={imageSrc}/>
-      <Card imageSrc={imageSrc}/>
-      <Card imageSrc={imageSrc}/>
-      <Card imageSrc={imageSrc}/>
+      {imageColl.map(clicky => (
+          <Card
+            id={clicky.id}
+            key={clicky.id}
+            name={clicky.name}
+            image={clicky.image}
+            clicked={clicky.clicked}
+          />
+        ))}
 
       </Wrapper>
     );
