@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Wrapper from "./components/Wrapper"
 import Card from "./components/Card"
 import imagesImport from "./images.json"
+import Score from "./components/Score"
+
 
 class App extends Component {
 
@@ -69,8 +71,11 @@ class App extends Component {
 
   render() {
     return (
-
       <Wrapper>
+        <Score 
+          score={this.state.score}
+          topScore={this.state.topScore}
+        />
         {this.state.clickables.map(clicky => (
             <Card
               id={clicky.id}

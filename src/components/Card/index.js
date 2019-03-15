@@ -1,15 +1,12 @@
-import React from "react";
-import "./style.css";
+import React from "react"
+import "./style.css"
 
 function Card(props) {
     return (
-
         <div className="card">
-
             <div className="img-container">
                 <img alt={props.name} src={props.image} />
             </div>
-
             <div className="content">
                 <ul>
                     <li>
@@ -22,8 +19,7 @@ function Card(props) {
             </div>
             <span onClick={() => props.handleClicky(props.id)} className="add">Q</span>
         </div>
-
     )
 }
 
-export default Card;
+export default Card
