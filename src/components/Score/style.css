@@ -1,3 +1,19 @@
 .score-wrapper {
     width: 100%;
-}  
+}
+
+.btn {
+    width: 50%;
+    font-weight: bold;
+    box-shadow: 0 3px 6px #999;
+}
+
+.btn-score {
+    background-color:rgb(223, 220, 32);
+}
+
+.btn-topScore {
+    background-color:rgb(9, 181, 255);
+    color: white;
+}
+
