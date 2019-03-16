@@ -3,7 +3,7 @@
 }
 
 .btn {
-    width: 50%;
+    width: 25%;
     font-weight: bold;
     box-shadow: 0 3px 6px #999;
 }
@@ -17,3 +17,9 @@
     color: white;
 }
 
+.btn-title {
+    background-color:rgb(100, 55, 236);
+    width: 50% !important;
+    color: white;
+    box-shadow: 0 -8px 6px #999, 0 8px 6px #999;
+}
