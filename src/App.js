@@ -36,6 +36,12 @@ class App extends Component {
     return 0
   }
 
+  compare = (a, b) => {
+    if (a < b) { return -1 }
+    if (a > b) { return 1  }
+    return 0
+  }
+
   handleClicky = id => {
     let allImages = this.state.clickables.sort(this.compare)
     let clickedImage = allImages.filter(clicky => clicky.id === id)
@@ -68,8 +74,11 @@ class App extends Component {
   }
 
   render() {
+    
     return (
       <Wrapper>
+
+
         <Score 
           score={this.state.score}
           topScore={this.state.topScore}
