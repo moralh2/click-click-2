@@ -5,13 +5,14 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
 const popover = (
     <Popover id="popover-basic" title="Las Intrucciones">
-        The instructions are simple: You have to click each of the images once; once you've clicked
-        all 12, you've won 💪 That said, if you click the same image twice, you have to start all over 😲
-        Oh, and the images will shuffle after every click 😈 Best of luck! 😘
+        The instructions are simple: You have to click each of the images once; once you've clicked all 12, you've won 
+        <span role="img" aria-label="emoji"> 💪</span> That said, if you click the same image twice, you have to start all over! 
+        Oh, and the images will shuffle after every click 
+        <span role="img" aria-label="emoji"> 😈</span> Best of luck! <span role="img" aria-label="emoji"> 😘</span>
     </Popover>
 )
 const Instrucciones = () => (
-    <OverlayTrigger trigger="click" placement="top" overlay={popover}>
+    <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
         <button type="button" className='btn btn-title align-middle'>
             (<i class="fas fa-mouse-pointer"></i>
             <i class="fas fa-mouse-pointer"></i>
